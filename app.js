@@ -3,8 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const request = require("request");
 
-var apiKey = "22fd142c0dabeee50ed201eab2e53a12-us17"; //Here your API key from Mailchimp
-var listID = "a8aa3bbbd8"; //Here your list id
+var apiKey = ""; //Here is your API key from Mailchimp
+var listID = ""; //Here your list id
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -65,8 +65,3 @@ app.listen(process.env.PORT || 3000, function () {
     console.log("Server is listening on port 3000");
 })
 
-// API Key
-// 22fd142c0dabeee50ed201eab2e53a12 - us17
-
-// audience id
-// a8aa3bbbd8
